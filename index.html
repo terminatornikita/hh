@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Савин Никита Вячеславович - Аналитик данных</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header,
+        .footer {
+            background-color: #d40000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .photo-container {
+            position: relative;
+            margin-right: 30px;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d40000;
+        }
+
+        .photo-texture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            mix-blend-mode: multiply;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section h2 {
+            color: #d40000;
+            margin-top: 0;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .job-company {
+            font-weight: bold;
+            color: #d40000;
+        }
+
+        .job-period {
+            color: #d10000;
+            font-style: italic;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .hh-icon {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            background-color: #dd0000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hh-icon.top-right {
+            bottom: 100px;
+            right: 30px;
+            animation-delay: 0.5s;
+
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Савин Никита Вячеславович</h1>
+            <p>Аналитик данных</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <div class="photo-container">
+                <img src="img/img1.jpg" alt="Фото Савина Никиты" class="photo">
+                <div class="photo-texture"></div>
+            </div>
+            <div class="contact-info">
+                <p><strong>Мужчина, 18 лет, родился 3 октября 2006</strong></p>
+                <p>+7 (960) 3581882 — предпочитаемый способ связи</p>
+                <p><a href="mailto:nikivsavin@icloud.com">nikivsavin@icloud.com</a></p>
+                <p>Проживает: Москва</p>
+                <p>Гражданство: Россия, есть разрешение на работу: Россия</p>
+                <p>Не готов к переезду, готов к редким командировкам</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Желаемая должность</h2>
+            <p><strong>Аналитик данных</strong></p>
+            <p>Специализации: Другое</p>
+            <p>Занятость: полная занятость</p>
+            <p>График работы: полный день</p>
+            <p>Желательное время в пути до работы: не имеет значения</p>
+        </div>
+
+        <div class="section">
+            <h2>Опыт работы — 1 год 1 месяц</h2>
+            <div class="job">
+                <div class="job-title">Аналитик данных</div>
+                <div class="job-company">Консалтинговое агенство</div>
+                <div class="job-period">Март 2024 — Март 2025, 1 год 1 месяц</div>
+                <ul>
+                    <li>Проводил количественные и качественные исследования: опросы, глубинные интервью, кабинетный
+                        анализ, работа с выборками.</li>
+                    <li>Работал с CRM-системой Битрикс24: настраивал воронки продаж, сегментировал клиентов,
+                        анализировал эффективность коммуникаций.</li>
+                    <li>Использовал Power BI для построения дашбордов по результатам исследований: k-means
+                        кластеризация, EST-модели, пирамида бренда.</li>
+                    <li>Обрабатывал данные из CRM и анкет с помощью SQL (PostgreSQL): очистка, агрегация, подготовка
+                        таблиц.</li>
+                    <li>Писал скрипты на Python для:
+                        <ul>
+                            <li>автоматизации обработки опросов (pandas)</li>
+                            <li>визуализации данных (matplotlib, seaborn)</li>
+                            <li>кластеризации (scikit-learn)</li>
+                            <li>построения моделей на основе факторов выбора</li>
+                        </ul>
+                    </li>
+                    <li>Составлял презентации по SCQA/Storyline для защиты перед клиентом.</li>
+                    <li>Участвовал в проектах по анализу целевой аудитории, рынка, конкурентной среды (на основе
+                        методологии "Сдвоенный рубин").</li>
+                    <li>Работал с Excel: сводные таблицы, power query, расчёты метрик (NPS, индекс удовлетворенности,
+                        KPI по сегментам).</li>
+                    <li>Помогал формировать экшн-планы внедрения на основе аналитики, участвовал в проектных сессиях.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Образование</h2>
+            <p>Неоконченное высшее</p>
+            <p><strong>Московский технический университет связи и информатики, Москва</strong></p>
+            <p>2028</p>
+            <p>Информационные технологии, Программная инженерия</p>
+        </div>
+
+        <div class="section">
+            <h2>Знание языков</h2>
+            <p>Русский — Родной</p>
+            <p>Английский — B1 — Средний</p>
+        </div>
+
+        <div class="section">
+            <h2>Навыки</h2>
+            <div class="skills-list">
+                <span class="skill">Python</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Ubuntu</span>
+                <span class="skill">HTTPS</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">MS Word</span>
+                <span class="skill">MS PowerPoint</span>
+                <span class="skill">MS Excel</span>
+                <span class="skill">DAX</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Обо мне</h2>
+            <h3>1) Программирование и автоматизация:</h3>
+            <ul>
+                <li>Пишу скрипты на Python — от простых до средней сложности, с применением ООП: инкапсуляция,
+                    наследование, полиморфизм.</li>
+                <li>Разрабатывал собственные проекты, включая систему управления сотрудниками, поддерживающую
+                    расширяемую архитектуру ролей.</li>
+                <li>Умею работать с библиотеками: pandas, matplotlib, seaborn, os, datetime.</li>
+                <li>Разрабатывал процессоры архитектур Фон Неймана и Гарвардской в Logisim (безусловные переходы,
+                    интеграция компонентов).</li>
+                <li>Занимался программированием на ассемблере (LamPanel): работа с регистрами, памятью, флагами.</li>
+                <li>Создавал алгоритмы (арифметические операции, обработка строк).</li>
+            </ul>
+
+            <h3>2) Базы данных:</h3>
+            <ul>
+                <li>Знаю основы SQL: работа с MySQL и PostgreSQL.</li>
+                <li>Знание DAX на начальном уровне.</li>
+                <li>Умею выполнять запросы на выборку, фильтрацию, сортировку, объединение таблиц (JOIN), агрегации
+                    (GROUP BY, COUNT, SUM).</li>
+                <li>Понимаю принципы нормализации данных и индексации.</li>
+            </ul>
+
+            <h3>3) Системное окружение:</h3>
+            <ul>
+                <li>Знаком с основами работы в Linux (Ubuntu): терминал, навигация, базовые команды.</li>
+                <li>Умею пользоваться Git и GitHub (репозитории, коммиты, ветки).</li>
+            </ul>
+
+            <h3>4) Веб-технологии:</h3>
+            <ul>
+                <li>Базово владею HTML и CSS — умею верстать простые страницы, стилизовать элементы.</li>
+            </ul>
+
+            <h3>5) Работа с данными и отчётностью:</h3>
+            <ul>
+                <li>Уверенно работаю в Microsoft Excel:
+                    <ul>
+                        <li>Построение сводных таблиц, диаграмм</li>
+                        <li>Использование формул (IF, VLOOKUP, INDEX, MATCH, SUMIF, COUNTIF)</li>
+                        <li>Подключение внешних источников через Power Query</li>
+                    </ul>
+                </li>
+                <li>Создаю презентации в PowerPoint, умею оформлять слайды по методике Storyline.</li>
+            </ul>
+
+            <h3>6) Дополнительно:</h3>
+            <ul>
+                <li>Комфортно работаю с MS Word, Outlook.</li>
+                <li>Понимаю принципы построения дашбордов и визуализации в Power BI (на уровне начального пользователя).
+                </li>
+            </ul>
+
+            <p>Cсылка на некоторые работы: <a
+                    href="https://github.com/terminatornikita">https://github.com/terminatornikita</a>.</p>
+
+            <p>Обладаю развитой коммуникабельностью и умею выстраивать доверительные отношения в команде. Ответственно
+                подхожу к работе, строго соблюдаю дедлайны и всегда ориентируюсь на результат.</p>
+
+            <p>Профессиональный опыт в спорте (играю за сборную МТУСИ по футболу) сформировал у меня дисциплину,
+                стрессоустойчивость и умение работать в команде.</p>
+
+            <p>Быстро обучаюсь новым инструментам и методологиям, умею самостоятельно разбираться в сложных задачах и
+                доводить их до конца.</p>
+
+            <p>Имею опыт публичных выступлений — участвовал в конкурсах чтецов и умею уверенно презентовать свои
+                аналитические выводы.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>© 2024 Савин Никита Вячеславович</p>
+        </div>
+    </div>
+
+    <div class="hh-icon top-right">hh.ru</div>
+    <div class="hh-icon bottom-left">hh.ru</div>
+</body>
+
+</html>
